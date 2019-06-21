@@ -1,0 +1,60 @@
+# POST http://localhost:5001/api/wishlist
+# content-type: application/json
+
+# {
+#   "Pid": 1,
+#   "Mid": 1
+# }
+
+# POST http://localhost:5000/api/wishlist
+# content-type: application/json
+
+# {
+#   "Pid": 2,
+#   "Mid": 2
+# }
+
+# POST http://localhost:5000/api/users/
+# content-type: application/json
+
+# {
+#   "Fname": "Emerald",
+#   "Lname": "Chen",
+#   "Uname":"EChen",
+#   "Passwrd":"1234567890",
+#   "Email":"123@666.com"
+# }
+
+# POST http://localhost:5001/api/users/
+# content-type: application/json
+
+# {
+#   "Fname": "Emerald",
+#   "Lname": "Chen",
+#   "Uname":"EChen",
+#   "Passwrd":"1234567890",
+#   "Email":"666@666.com"
+# }
+
+
+# POST http://localhost:5000/api/movies/
+# content-type: application/json
+
+# {
+#   "Title": "Spider-Man: Far from Home",
+#   "Summary": "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
+#   "Picture":"MV5BNmIxMzY4ZTgtYmMzOS00NTU5LWJjYzAtYjM5YmE3OTAwMTFlXkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_UY209_CR0,0,140,209_AL_",
+#   "Genre":"Action",
+#   "Rating":"5.5"
+# }
+
+POST http://localhost:5001/api/movies/
+content-type: application/json
+
+{
+  "Title": "The Angry Birds Movie 2",
+  "Summary": "The flightless birds and scheming green pigs take their beef to the next level.",
+  "Picture":"MV5BYzdkNGJhNzQtMjY1OC00MDI3LTk0ZDUtNzU0MGZiY2YwZGUxXkEyXkFqcGdeQXVyNzMxNjQxMTk@._V1_UY209_CR0,0,140,209_AL_",
+  "Genre":" Animation",
+  "Rating":"6.8"
+}

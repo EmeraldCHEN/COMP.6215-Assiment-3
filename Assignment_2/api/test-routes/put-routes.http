@@ -1,0 +1,33 @@
+# PUT http://localhost:5000/api/users/1
+# content-type: application/json
+
+# {
+#   "id": 1,
+#   "Fname": "Steve",
+#   "Lname":"Rogers",
+#   "Uname":"SRogers",
+#   "Passwrd":"1",
+#   "Email":"steve.rogers@avengers.com"
+# }
+ 
+# PUT http://localhost:5001/api/users/1
+# content-type: application/json
+
+# {
+#   "id": 1,
+#   "Fname": "Steve",
+#   "Lname":"Rogers",
+#   "Uname":"SRogers",
+#   "Passwrd":"America1",
+#   "Email":"steve.rogers@avengers.com"
+# }
+
+
+# PUT http://localhost:5000/api/wishlist/1
+# content-type: application/json
+
+# {
+#   "ID": 1,
+#   "Pid": 1,
+#   "Mid": 1
+# }

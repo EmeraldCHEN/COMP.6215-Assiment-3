@@ -1,0 +1,40 @@
+﻿<Window x:Class="Movies_Wpf_App.MovieAddingForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies_Wpf_App"
+        mc:Ignorable="d"
+        Title="Registration Form" Height="628.616" Width="825" Background="#FFE1F6F7" MinWidth="800" MinHeight="520" MaxWidth="900">
+    <Grid Margin="10,10,2,9">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Content="Movie Title" FontSize="19" Margin="150,-451,102,432" Width="110" RenderTransformOrigin="0.5,0.5"/>
+            <TextBox x:Name="movieTitle"  TextWrapping="Wrap" FontSize="19" Margin="-90,-451,73,432" BorderThickness="3"  Foreground="#09A488" Width="357"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Content="Image Address" FontSize="19" Margin="150,-311,102,288" Width="142" />
+            <TextBox x:Name="imgAdrress"  TextWrapping="Wrap" FontSize="19" Margin="-100,-311,73,288" BorderThickness="3"  Foreground="#09A488" Width="337"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Content="Genre" FontSize="19" Margin="150,-385,102,363" Width="212" RenderTransformOrigin="0.5,0.5" />
+            <TextBox x:Name="movieGenre"  TextWrapping="Wrap" FontSize="19" Margin="-190,-385,73,363" BorderThickness="3"  Foreground="#09A488" Width="115"  />
+            <Label Content="Rate" FontSize="19" Margin="0,-385,102,363" Width="159" />
+            <TextBox x:Name="movieRate"  TextWrapping="Wrap" FontSize="19" Margin="-220,-385,73,363" BorderThickness="3"  Foreground="#09A488" Width="105"  />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Content="Summary " FontSize="19" Margin="150,-230,12,200" Width="104" RenderTransformOrigin="0.5,0.5"/>
+            <TextBox x:Name="movieSummary"  TextWrapping="WrapWithOverflow" FontSize="18" Foreground="#09A488" BorderThickness="3" Margin="7,-230,75,141" Height="109" VerticalAlignment="Bottom" Width="358"  />
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Margin="150,-520,0,489" FontSize="19" Width="510" Foreground="#FF1721F1">Please visit imdb.com and copy movies info from there
+            </Label>
+        </StackPanel>
+
+        <Button x:Name="addMovieButton" Content="Add to Database" Margin="322,468,294,62" FontSize="20" FontWeight="Bold" Background="#FC8EB4" Click="Button_AddMovie" Cursor="Hand" RenderTransformOrigin="0.618,5.109" Foreground="#FFF9F7F7"/>
+
+        <Button x:Name="backButton" Content="Back to Users Page " Margin="593,530,10,10" FontSize="20" Background="#FFEDFC8E" Click="Button_Back" Cursor="Hand" RenderTransformOrigin="0.618,5.109" Foreground="Black"/>
+
+    </Grid>
+</Window>

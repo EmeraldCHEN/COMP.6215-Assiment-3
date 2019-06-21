@@ -1,0 +1,38 @@
+﻿<Window x:Class="Movies_Wpf_App.RegistrationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies_Wpf_App"
+        mc:Ignorable="d"
+        Title="Registration Form" Height="564.553" Width="825" Background="#FFE1F6F7" MinWidth="800" MinHeight="520" MaxWidth="900">
+    <Grid Margin="10,10,21,0" Height="499" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,15">
+            <Label Content="First Name" FontSize="18" Margin="200,-416,102,389" Width="94" RenderTransformOrigin="0.5,0.5"/>
+            <TextBox x:Name="registerFName"  TextWrapping="Wrap" FontSize="22" Margin="-90,-416,73,389" BorderThickness="3"  Foreground="#09A488" Width="252" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="35" Margin="0,449,0,0">
+            <Label Content="Last Name" FontSize="18" Margin="200,-334,200,324" Width="114"/>
+            <TextBox x:Name="registerLName"  TextWrapping="Wrap" FontSize="22" Margin="-208,-334,73,324" BorderThickness="3"  Foreground="#09A488" Width="254" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="46" Margin="0,0,0,30">
+            <Label Content="Email" FontSize="18" Margin="200,-246,0,248" Width="95" RenderTransformOrigin="0.5,0.5">
+            </Label>
+            <TextBox x:Name="registerEmail"  TextWrapping="Wrap" FontSize="22" Margin="10,-246,226,248" BorderThickness="3"  Foreground="#09A488" Width="255" />
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35" Margin="0,30">
+            <Label Content="Password" FontSize="18" Margin="200,-199,132,189" Width="93"/>
+            <TextBox x:Name="registerPassword"  TextWrapping="Wrap" FontSize="22" Margin="-120,-199,73,189" BorderThickness="3"  Foreground="#09A488" Width="254" />
+        </StackPanel>
+        
+        <Button x:Name="registerButton" Content="Register" Margin="315,307,286,143" FontSize="20" FontWeight="Bold" Background="#FF62A7F9" Click="Button_Register" Cursor="Hand" RenderTransformOrigin="0.618,5.109" Foreground="#FFF9F7F7"/>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="46" Margin="0,0,0,30">
+
+            <Label Margin="200,-16,229,0" FontSize="22" Foreground="#FFF749A0" RenderTransformOrigin="0.5,0.5" Width="259" >I've already registered -->
+            </Label>
+            <Button x:Name="loginButton" Content="Login" Margin="-220,-16,286,10" FontSize="20" FontWeight="Bold" Background="#FC8EB4" Click="Button_Login" Cursor="Hand" RenderTransformOrigin="0.618,5.109" Foreground="#FFF9F7F7" Width="164" />
+        </StackPanel>
+    </Grid>
+</Window>
